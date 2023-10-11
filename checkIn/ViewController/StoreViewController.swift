@@ -161,7 +161,7 @@ class StoreViewController: UIViewController {
         storeInformationDescriptionView.translatesAutoresizingMaskIntoConstraints = false
         storeInformationDescriptionView.backgroundColor = .systemBackground
         let safeArea = self.view.safeAreaLayoutGuide
-        //34~35
+       
         NSLayoutConstraint.activate([
             storeInformationDescriptionView.topAnchor.constraint(equalTo: informationContainerView.bottomAnchor, constant: 30),
             storeInformationDescriptionView.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 10),
@@ -231,8 +231,6 @@ extension StoreViewController: UICollectionViewDelegate, UICollectionViewDataSou
             return UICollectionViewCell()
         }
         cell.representativeMenuImageView.image = menuImage
-//        cell.setupCell(with: meneImageName)
-//        cell.backgroundColor = .gray
         
         return cell
     }
