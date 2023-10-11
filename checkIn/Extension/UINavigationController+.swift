@@ -14,16 +14,6 @@ extension UINavigationController {
         tabBarItemImageName: String,
         tabBarItemTitle: String
     ) -> UINavigationController {
-//        guard let tabBarItemSelectedImage = UIImage(systemName: tabBarItemSelectedImageName) else {
-//            return UINavigationController()
-//        }
-//        guard let tabBarItemImage = UIImage(systemName: tabBarItemImageName) else {
-//            return UINavigationController()
-//        }
-//        
-//        viewController.tabBarItem.selectedImage = tabBarItemSelectedImage
-//        viewController.tabBarItem.image = tabBarItemImage
-//        viewController.tabBarItem.title = tabBarItemTitle
         let viewController = UIViewController().setupViewController(
             viewController: viewController,
             tabBarItemSelectedImageName: tabBarItemSelectedImageName,
