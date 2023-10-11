@@ -19,6 +19,9 @@
 		CD04B17F2AD42512007AC578 /* RepresentativeMenuCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B17E2AD42512007AC578 /* RepresentativeMenuCollectionView.swift */; };
 		CD04B1812AD42545007AC578 /* RepresentativeMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B1802AD42545007AC578 /* RepresentativeMenuCollectionViewCell.swift */; };
 		CD04B1832AD58782007AC578 /* StoreInformationDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B1822AD58782007AC578 /* StoreInformationDescriptionView.swift */; };
+		CD04B1852AD6473B007AC578 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B1842AD6473B007AC578 /* RootTabBarController.swift */; };
+		CD04B1892AD648DE007AC578 /* UINavigationController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B1882AD648DE007AC578 /* UINavigationController+.swift */; };
+		CD04B18B2AD65505007AC578 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B18A2AD65505007AC578 /* UIViewController+.swift */; };
 		CDC79F192AD36A9600F7EB58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC79F182AD36A9600F7EB58 /* AppDelegate.swift */; };
 		CDC79F1B2AD36A9600F7EB58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC79F1A2AD36A9600F7EB58 /* SceneDelegate.swift */; };
 		CDC79F222AD36A9700F7EB58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC79F212AD36A9700F7EB58 /* Assets.xcassets */; };
@@ -39,6 +42,9 @@
 		CD04B17E2AD42512007AC578 /* RepresentativeMenuCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeMenuCollectionView.swift; sourceTree = "<group>"; };
 		CD04B1802AD42545007AC578 /* RepresentativeMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeMenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		CD04B1822AD58782007AC578 /* StoreInformationDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreInformationDescriptionView.swift; sourceTree = "<group>"; };
+		CD04B1842AD6473B007AC578 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		CD04B1882AD648DE007AC578 /* UINavigationController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+.swift"; sourceTree = "<group>"; };
+		CD04B18A2AD65505007AC578 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		CDC79F152AD36A9600F7EB58 /* checkIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = checkIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC79F182AD36A9600F7EB58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDC79F1A2AD36A9600F7EB58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +74,8 @@
 			children = (
 				CD04B1702AD3DA13007AC578 /* UIView+.swift */,
 				CD04B1772AD40CA7007AC578 /* UIColor+.swift */,
+				CD04B1882AD648DE007AC578 /* UINavigationController+.swift */,
+				CD04B18A2AD65505007AC578 /* UIViewController+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -118,6 +126,7 @@
 				CDC79F362AD375BB00F7EB58 /* MapViewController.swift */,
 				CDC79F382AD375CB00F7EB58 /* StoreListViewController.swift */,
 				CD04B16A2AD3C992007AC578 /* StoreViewController.swift */,
+				CD04B1842AD6473B007AC578 /* RootTabBarController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -213,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD04B1892AD648DE007AC578 /* UINavigationController+.swift in Sources */,
 				CD04B1762AD40730007AC578 /* StoreInformationCircleButton.swift in Sources */,
 				CDC79F192AD36A9600F7EB58 /* AppDelegate.swift in Sources */,
 				CD04B16F2AD3CDD4007AC578 /* StoreBannerView.swift in Sources */,
@@ -222,6 +232,8 @@
 				CDC79F392AD375CB00F7EB58 /* StoreListViewController.swift in Sources */,
 				CD04B16B2AD3C992007AC578 /* StoreViewController.swift in Sources */,
 				CD04B1712AD3DA13007AC578 /* UIView+.swift in Sources */,
+				CD04B1852AD6473B007AC578 /* RootTabBarController.swift in Sources */,
+				CD04B18B2AD65505007AC578 /* UIViewController+.swift in Sources */,
 				CDC79F1B2AD36A9600F7EB58 /* SceneDelegate.swift in Sources */,
 				CD04B1812AD42545007AC578 /* RepresentativeMenuCollectionViewCell.swift in Sources */,
 				CDC79F3C2AD3770A00F7EB58 /* MapView.swift in Sources */,
