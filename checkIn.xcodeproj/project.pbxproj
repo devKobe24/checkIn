@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD04B1672AD3BF3C007AC578 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CD04B1662AD3BF3C007AC578 /* SnapKit */; };
-		CD04B1692AD3BF3C007AC578 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = CD04B1682AD3BF3C007AC578 /* SnapKit-Dynamic */; };
 		CD04B16B2AD3C992007AC578 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B16A2AD3C992007AC578 /* StoreViewController.swift */; };
 		CD04B16F2AD3CDD4007AC578 /* StoreBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B16E2AD3CDD4007AC578 /* StoreBannerView.swift */; };
 		CD04B1712AD3DA13007AC578 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B1702AD3DA13007AC578 /* UIView+.swift */; };
@@ -61,8 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD04B1672AD3BF3C007AC578 /* SnapKit in Frameworks */,
-				CD04B1692AD3BF3C007AC578 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,8 +158,6 @@
 			);
 			name = checkIn;
 			packageProductDependencies = (
-				CD04B1662AD3BF3C007AC578 /* SnapKit */,
-				CD04B1682AD3BF3C007AC578 /* SnapKit-Dynamic */,
 			);
 			productName = checkIn;
 			productReference = CDC79F152AD36A9600F7EB58 /* checkIn.app */;
@@ -194,7 +188,6 @@
 			);
 			mainGroup = CDC79F0C2AD36A9600F7EB58;
 			packageReferences = (
-				CD04B1652AD3BF3C007AC578 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = CDC79F162AD36A9600F7EB58 /* Products */;
 			projectDirPath = "";
@@ -386,6 +379,7 @@
 				DEVELOPMENT_TEAM = 64WAG22Y2J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = checkIn/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "지도 권한 필요";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -413,6 +407,7 @@
 				DEVELOPMENT_TEAM = 64WAG22Y2J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = checkIn/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "지도 권한 필요";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -452,30 +447,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		CD04B1652AD3BF3C007AC578 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.6.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		CD04B1662AD3BF3C007AC578 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CD04B1652AD3BF3C007AC578 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		CD04B1682AD3BF3C007AC578 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CD04B1652AD3BF3C007AC578 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CDC79F0D2AD36A9600F7EB58 /* Project object */;
 }
