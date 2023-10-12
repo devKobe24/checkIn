@@ -80,6 +80,7 @@ class StoreViewController: UIViewController {
         storeInformationCircleButton2UITest()
         storeInformationCircleButton3UITest()
         
+        storeInformationCircleButton1NMViewTest()
         storeInformationCicleButton3PhoneCallTest()
         storeInformationCircleButton2WebOpenTest()
         
@@ -127,6 +128,15 @@ class StoreViewController: UIViewController {
             storeInformationCircleButton1.widthAnchor.constraint(equalTo: storeInformationCircleButton1.heightAnchor, multiplier: 1)
             
         ])
+    }
+    
+    func storeInformationCircleButton1NMViewTest() {
+        storeInformationCircleButton1.addTarget(self, action: #selector(openNMapView), for: .touchUpInside)
+    }
+    
+    @objc func openNMapView() {
+        let nmViewController = NMViewController()
+        self.present(nmViewController, animated: true)
     }
     
     func storeInformationCircleButton2UITest() {

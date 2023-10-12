@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		85A92F86F5977B39435CE6DC /* libPods-checkIn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02AB3A8B57A55A33DBBED314 /* libPods-checkIn.a */; };
 		CD04B16B2AD3C992007AC578 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B16A2AD3C992007AC578 /* StoreViewController.swift */; };
 		CD04B16F2AD3CDD4007AC578 /* StoreBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B16E2AD3CDD4007AC578 /* StoreBannerView.swift */; };
 		CD04B1712AD3DA13007AC578 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B1702AD3DA13007AC578 /* UIView+.swift */; };
@@ -21,6 +20,8 @@
 		CD04B1852AD6473B007AC578 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B1842AD6473B007AC578 /* RootTabBarController.swift */; };
 		CD04B1892AD648DE007AC578 /* UINavigationController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B1882AD648DE007AC578 /* UINavigationController+.swift */; };
 		CD04B18B2AD65505007AC578 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B18A2AD65505007AC578 /* UIViewController+.swift */; };
+		CD2FA0E52AD7B3400042BDB3 /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2FA0E42AD7B3400042BDB3 /* Bundle+.swift */; };
+		CD2FA0E72AD7B5A70042BDB3 /* NMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2FA0E62AD7B5A70042BDB3 /* NMViewController.swift */; };
 		CDC79F192AD36A9600F7EB58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC79F182AD36A9600F7EB58 /* AppDelegate.swift */; };
 		CDC79F1B2AD36A9600F7EB58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC79F1A2AD36A9600F7EB58 /* SceneDelegate.swift */; };
 		CDC79F222AD36A9700F7EB58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC79F212AD36A9700F7EB58 /* Assets.xcassets */; };
@@ -31,8 +32,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02AB3A8B57A55A33DBBED314 /* libPods-checkIn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-checkIn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C994CBF62F0DD3A38FEFF61 /* Pods-checkIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkIn.debug.xcconfig"; path = "Target Support Files/Pods-checkIn/Pods-checkIn.debug.xcconfig"; sourceTree = "<group>"; };
 		CD04B16A2AD3C992007AC578 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		CD04B16E2AD3CDD4007AC578 /* StoreBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreBannerView.swift; sourceTree = "<group>"; };
 		CD04B1702AD3DA13007AC578 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
@@ -46,6 +45,8 @@
 		CD04B1842AD6473B007AC578 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		CD04B1882AD648DE007AC578 /* UINavigationController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+.swift"; sourceTree = "<group>"; };
 		CD04B18A2AD65505007AC578 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		CD2FA0E42AD7B3400042BDB3 /* Bundle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
+		CD2FA0E62AD7B5A70042BDB3 /* NMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMViewController.swift; sourceTree = "<group>"; };
 		CDC79F152AD36A9600F7EB58 /* checkIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = checkIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC79F182AD36A9600F7EB58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDC79F1A2AD36A9600F7EB58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +56,6 @@
 		CDC79F362AD375BB00F7EB58 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CDC79F382AD375CB00F7EB58 /* StoreListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListViewController.swift; sourceTree = "<group>"; };
 		CDC79F3B2AD3770A00F7EB58 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		E84FCFDC13A69371E580EEFA /* Pods-checkIn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkIn.release.xcconfig"; path = "Target Support Files/Pods-checkIn/Pods-checkIn.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85A92F86F5977B39435CE6DC /* libPods-checkIn.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,10 +72,7 @@
 		B1E407DFE020771FB70D2501 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1C994CBF62F0DD3A38FEFF61 /* Pods-checkIn.debug.xcconfig */,
-				E84FCFDC13A69371E580EEFA /* Pods-checkIn.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -87,6 +83,7 @@
 				CD04B1772AD40CA7007AC578 /* UIColor+.swift */,
 				CD04B1882AD648DE007AC578 /* UINavigationController+.swift */,
 				CD04B18A2AD65505007AC578 /* UIViewController+.swift */,
+				CD2FA0E42AD7B3400042BDB3 /* Bundle+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -97,7 +94,6 @@
 				CDC79F172AD36A9600F7EB58 /* checkIn */,
 				CDC79F162AD36A9600F7EB58 /* Products */,
 				B1E407DFE020771FB70D2501 /* Pods */,
-				FB51E65AB9942AEAB6660934 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +136,7 @@
 				CDC79F382AD375CB00F7EB58 /* StoreListViewController.swift */,
 				CD04B16A2AD3C992007AC578 /* StoreViewController.swift */,
 				CD04B1842AD6473B007AC578 /* RootTabBarController.swift */,
+				CD2FA0E62AD7B5A70042BDB3 /* NMViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -158,14 +155,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		FB51E65AB9942AEAB6660934 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				02AB3A8B57A55A33DBBED314 /* libPods-checkIn.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -173,11 +162,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDC79F292AD36A9700F7EB58 /* Build configuration list for PBXNativeTarget "checkIn" */;
 			buildPhases = (
-				7BEEDD20C15E2705A4453FB3 /* [CP] Check Pods Manifest.lock */,
 				CDC79F112AD36A9600F7EB58 /* Sources */,
 				CDC79F122AD36A9600F7EB58 /* Frameworks */,
 				CDC79F132AD36A9600F7EB58 /* Resources */,
-				A259BBF7DEEBFB6B8AE25A42 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,48 +220,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		7BEEDD20C15E2705A4453FB3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-checkIn-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A259BBF7DEEBFB6B8AE25A42 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-checkIn/Pods-checkIn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-checkIn/Pods-checkIn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-checkIn/Pods-checkIn-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		CDC79F112AD36A9600F7EB58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -287,6 +232,7 @@
 				CD04B17D2AD424BF007AC578 /* RepresentativeMenuData.swift in Sources */,
 				CD04B1742AD403C3007AC578 /* InformationContainerView.swift in Sources */,
 				CD04B1782AD40CA7007AC578 /* UIColor+.swift in Sources */,
+				CD2FA0E52AD7B3400042BDB3 /* Bundle+.swift in Sources */,
 				CDC79F392AD375CB00F7EB58 /* StoreListViewController.swift in Sources */,
 				CD04B16B2AD3C992007AC578 /* StoreViewController.swift in Sources */,
 				CD04B1712AD3DA13007AC578 /* UIView+.swift in Sources */,
@@ -294,6 +240,7 @@
 				CD04B18B2AD65505007AC578 /* UIViewController+.swift in Sources */,
 				CDC79F1B2AD36A9600F7EB58 /* SceneDelegate.swift in Sources */,
 				CD04B1812AD42545007AC578 /* RepresentativeMenuCollectionViewCell.swift in Sources */,
+				CD2FA0E72AD7B5A70042BDB3 /* NMViewController.swift in Sources */,
 				CDC79F3C2AD3770A00F7EB58 /* MapView.swift in Sources */,
 				CDC79F372AD375BB00F7EB58 /* MapViewController.swift in Sources */,
 				CD04B17F2AD42512007AC578 /* RepresentativeMenuCollectionView.swift in Sources */,
@@ -436,7 +383,6 @@
 		};
 		CDC79F2A2AD36A9700F7EB58 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C994CBF62F0DD3A38FEFF61 /* Pods-checkIn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,7 +411,6 @@
 		};
 		CDC79F2B2AD36A9700F7EB58 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E84FCFDC13A69371E580EEFA /* Pods-checkIn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
