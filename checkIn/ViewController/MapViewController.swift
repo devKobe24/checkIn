@@ -49,11 +49,6 @@ extension MapViewController: CLLocationManagerDelegate {
             print("위치 업데이트")
             print("위도 : \(location.coordinate.latitude)")
             print("경도 : \(location.coordinate.longitude)")
-            
-//            self.currentLatitude = location.coordinate.latitude
-//            self.currentLongtitude = location.coordinate.longitude
-//            self.currentLatitude = 37.564103
-//            self.currentLongtitude = 126.983885
         }
     }
     
@@ -75,11 +70,11 @@ extension MapViewController {
         } else {
             authorizationStatus = CLLocationManager.authorizationStatus()
         }
-        
-        if CLLocationManager.locationServicesEnabled() {
-            checkCurrentLocationAuthorization(authorizationStatus: authorizationStatus)
+        DispatchQueue.global().async {
+            if CLLocationManager.locationServicesEnabled() {
+                self.checkCurrentLocationAuthorization(authorizationStatus: authorizationStatus)
+            }
         }
-            
     }
     
     private func setMapRegion() {
@@ -177,7 +172,7 @@ extension MapViewController: MKMapViewDelegate {
 
 extension MapViewController {
     private func goSetting() {
-        let alert = UIAlertController(title: "위치권한 요청", message: "러닝 거리 기록을 위해 항상 위치 권한이 필요합니다.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "위치권한 요청", message: "항상 위치 권한이 필요합니다.", preferredStyle: .alert)
         let settingAction = UIAlertAction(title: "설정", style: .default) { action in
             guard let url = URL(string: UIApplication.openSettingsURLString) else { return }
             // 열 수 있는 url 이라면, 이동
@@ -201,12 +196,6 @@ extension MapViewController {
     }
     
     @objc func findMyLocation() {
-        
-//        guard let currentLocation = locationManager.location else {
-//            checkUserLocationServicesAuthorization()
-//            return
-//        }
-        
         mapView.map.showsUserLocation = true
         
         mapView.map.setUserTrackingMode(.follow, animated: true)
