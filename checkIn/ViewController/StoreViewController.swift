@@ -80,6 +80,8 @@ class StoreViewController: UIViewController {
         storeInformationCircleButton2UITest()
         storeInformationCircleButton3UITest()
         
+        storeInformationCicleButton3PhoneCallTest()
+        
         storeInformationDescriptionViewConfigureTest()
         storeInformationDescriptionViewUITest()
         
@@ -156,6 +158,17 @@ class StoreViewController: UIViewController {
         ])
     }
     
+    func storeInformationCicleButton3PhoneCallTest() {
+        storeInformationCircleButton3.addTarget(self, action: #selector(phoneCall), for: .touchUpInside)
+    }
+    
+    @objc private func phoneCall() {
+        guard let number = URL(string: "tel://" + "01089535200") else { return }
+        DispatchQueue.main.async {
+            UIApplication.shared.open(number)
+        }
+    }
+    
     func storeInformationDescriptionViewUITest() {
         self.view.addSubview(storeInformationDescriptionView)
         storeInformationDescriptionView.translatesAutoresizingMaskIntoConstraints = false
@@ -193,8 +206,6 @@ class StoreViewController: UIViewController {
             representationMeneCollectionView.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -30)
         ])
     }
-    
-    
 }
 
 extension StoreViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
