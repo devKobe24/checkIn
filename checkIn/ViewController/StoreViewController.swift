@@ -55,18 +55,6 @@ class StoreViewController: UIViewController {
     var lastScrollOffset: CGFloat = 0
     
     let storeInformationDescriptionView: StoreInformationDescriptionView = StoreInformationDescriptionView()
-    
-    // 컬랙션 뷰
-    // 배너 v
-    // 식당 이름v
-    // 정보 컨테이너 뷰 v
-    // 정보 서클 뷰v
-    // 식당 홈페이지v
-    // 전화 번호v
-    // 식당 위치v
-    
-    // 식당 소개
-    //
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,7 +68,6 @@ class StoreViewController: UIViewController {
         storeInformationCircleButton2UITest()
         storeInformationCircleButton3UITest()
         
-        storeInformationCircleButton1NMViewTest()
         storeInformationCicleButton3PhoneCallTest()
         storeInformationCircleButton2WebOpenTest()
         
@@ -128,15 +115,6 @@ class StoreViewController: UIViewController {
             storeInformationCircleButton1.widthAnchor.constraint(equalTo: storeInformationCircleButton1.heightAnchor, multiplier: 1)
             
         ])
-    }
-    
-    func storeInformationCircleButton1NMViewTest() {
-        storeInformationCircleButton1.addTarget(self, action: #selector(openNMapView), for: .touchUpInside)
-    }
-    
-    @objc func openNMapView() {
-        let nmViewController = NMViewController()
-        self.present(nmViewController, animated: true)
     }
     
     func storeInformationCircleButton2UITest() {
