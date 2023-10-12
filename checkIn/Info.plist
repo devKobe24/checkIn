@@ -4,8 +4,6 @@
 <dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
-        <key>NMFClientId</key>
-        <string>7uralinjx2</string>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
 		<key>UISceneConfigurations</key>
