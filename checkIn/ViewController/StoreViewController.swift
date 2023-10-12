@@ -81,6 +81,7 @@ class StoreViewController: UIViewController {
         storeInformationCircleButton3UITest()
         
         storeInformationCicleButton3PhoneCallTest()
+        storeInformationCircleButton2WebOpenTest()
         
         storeInformationDescriptionViewConfigureTest()
         storeInformationDescriptionViewUITest()
@@ -141,6 +142,18 @@ class StoreViewController: UIViewController {
             storeInformationCircleButton2.widthAnchor.constraint(equalTo: storeInformationCircleButton1.heightAnchor, multiplier: 1)
             
         ])
+    }
+    
+    func storeInformationCircleButton2WebOpenTest() {
+        storeInformationCircleButton2.addTarget(self, action: #selector(openWebSite), for: .touchUpInside)
+    }
+    
+    @objc private func openWebSite() {
+        guard let url = URL(string: "https://www.naver.com") else { return }
+        DispatchQueue.main.async {
+            UIApplication.shared.open(url)
+        }
+                
     }
     
     func storeInformationCircleButton3UITest() {
