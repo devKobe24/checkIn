@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85A92F86F5977B39435CE6DC /* libPods-checkIn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02AB3A8B57A55A33DBBED314 /* libPods-checkIn.a */; };
 		CD04B16B2AD3C992007AC578 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B16A2AD3C992007AC578 /* StoreViewController.swift */; };
 		CD04B16F2AD3CDD4007AC578 /* StoreBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B16E2AD3CDD4007AC578 /* StoreBannerView.swift */; };
 		CD04B1712AD3DA13007AC578 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04B1702AD3DA13007AC578 /* UIView+.swift */; };
@@ -30,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02AB3A8B57A55A33DBBED314 /* libPods-checkIn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-checkIn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C994CBF62F0DD3A38FEFF61 /* Pods-checkIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkIn.debug.xcconfig"; path = "Target Support Files/Pods-checkIn/Pods-checkIn.debug.xcconfig"; sourceTree = "<group>"; };
 		CD04B16A2AD3C992007AC578 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		CD04B16E2AD3CDD4007AC578 /* StoreBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreBannerView.swift; sourceTree = "<group>"; };
 		CD04B1702AD3DA13007AC578 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
@@ -52,6 +55,7 @@
 		CDC79F362AD375BB00F7EB58 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CDC79F382AD375CB00F7EB58 /* StoreListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListViewController.swift; sourceTree = "<group>"; };
 		CDC79F3B2AD3770A00F7EB58 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		E84FCFDC13A69371E580EEFA /* Pods-checkIn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkIn.release.xcconfig"; path = "Target Support Files/Pods-checkIn/Pods-checkIn.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +63,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85A92F86F5977B39435CE6DC /* libPods-checkIn.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1E407DFE020771FB70D2501 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C994CBF62F0DD3A38FEFF61 /* Pods-checkIn.debug.xcconfig */,
+				E84FCFDC13A69371E580EEFA /* Pods-checkIn.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CD04B1722AD402DA007AC578 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +96,8 @@
 			children = (
 				CDC79F172AD36A9600F7EB58 /* checkIn */,
 				CDC79F162AD36A9600F7EB58 /* Products */,
+				B1E407DFE020771FB70D2501 /* Pods */,
+				FB51E65AB9942AEAB6660934 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +158,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FB51E65AB9942AEAB6660934 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02AB3A8B57A55A33DBBED314 /* libPods-checkIn.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,17 +173,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDC79F292AD36A9700F7EB58 /* Build configuration list for PBXNativeTarget "checkIn" */;
 			buildPhases = (
+				7BEEDD20C15E2705A4453FB3 /* [CP] Check Pods Manifest.lock */,
 				CDC79F112AD36A9600F7EB58 /* Sources */,
 				CDC79F122AD36A9600F7EB58 /* Frameworks */,
 				CDC79F132AD36A9600F7EB58 /* Resources */,
+				A259BBF7DEEBFB6B8AE25A42 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = checkIn;
-			packageProductDependencies = (
-			);
 			productName = checkIn;
 			productReference = CDC79F152AD36A9600F7EB58 /* checkIn.app */;
 			productType = "com.apple.product-type.application";
@@ -187,8 +212,6 @@
 				Base,
 			);
 			mainGroup = CDC79F0C2AD36A9600F7EB58;
-			packageReferences = (
-			);
 			productRefGroup = CDC79F162AD36A9600F7EB58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -209,6 +232,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BEEDD20C15E2705A4453FB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-checkIn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A259BBF7DEEBFB6B8AE25A42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-checkIn/Pods-checkIn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-checkIn/Pods-checkIn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-checkIn/Pods-checkIn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CDC79F112AD36A9600F7EB58 /* Sources */ = {
@@ -371,6 +436,7 @@
 		};
 		CDC79F2A2AD36A9700F7EB58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C994CBF62F0DD3A38FEFF61 /* Pods-checkIn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -399,6 +465,7 @@
 		};
 		CDC79F2B2AD36A9700F7EB58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E84FCFDC13A69371E580EEFA /* Pods-checkIn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
